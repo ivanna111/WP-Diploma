@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: Karma, sans-serif;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body {
+    color: #4b4b4b;
+    margin: 0 5%;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+header {
+    height: 60px;
+}
+
+.header-nav {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-name a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.fa-bars {
+    color: #4b4b4b;
+}
+
+.main-container {
+    margin-top: 20px;
+}
+
+.main-navigation {
+    display: none;
+    /*display: block;
+    position: absolute;
+    z-index: 10;
+    width: 35%;
+    background-color: white;
+    color: #4b4b4b;*/
+}
+
+.main-navigation a {
+    padding-left: 0;
+    color: #4b4b4b;
+}
+
+.main-navigation a:hover {
+    background-color: darkgray;
+}
+
+.fa-bars:hover .main-navigation {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+}
+
+.image-of-food {
+    height: 400px;
+    max-width: 270px;
+}
+
+.image-of-food img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu a:hover .main-navigation {
+    display: block;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+.main-navigation a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+
+.food-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    padding: 5px 8px;
+    margin-top: 10px;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    background-color: white;
+    width: 120px;
+    text-align: center;
+
+}
+
+.post > h2 {
+    font-size: 17px;
+    line-height: normal;
+}
+
+.post > p {
+    font-size: 9px;
+    line-height: normal;
+}
+
+.pages {
+    text-align: center;
+}
+
+.pages * {
+    display: inline;
+
+}
+
+.pages a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    width: 41px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+.brackets {
+
+    vertical-align: middle;
+}
+
+.pages a:hover {
+    color: white;
+    background-color: black;
+}
+
+.chef-info {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    display: inline-flex;
+    margin: 0 20px;
+}
+
+footer div {
+    flex-basis: 33.3%;
+}
+
+footer > div:nth-child(2) {
+    margin: 0 15px;
+}
+
+
+.footer-post {
+    height: 50px;
+    margin-left: 15px;
+}
+
+.footer-post h3 {
+    margin-bottom: 0;
+}
+
+.footer-post p {
+    margin-top: 10px;
+}
+
+.footer-post img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.tags ul {
+    text-align: left;
+}
+
+.tag {
+    display: inline-block;
+    color: white;
+    background-color: grey;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .image-of-food {
+        height: unset;
+    }
+
+    .chef-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-of-food {
+        max-width: unset;
+    }
+
+    .post {
+        flex-basis: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer > div:nth-child(2) {
+        margin: 0;
+    }
+}

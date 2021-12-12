@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    font-family: Karma, sans-serif;
+}
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body{
+    color: #4b4b4b;
+    margin:0 15px;
+    max-width: 1024px;
+}
+h2{
+    font-weight: normal;
+}
+.header-nav{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding:0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-container{
+    margin-top: 100px;
+}
+.main-navigation{
+   display: none;
+}
+.menu a:hover .main-navigation{
+    display: block;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+.main-navigation a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+
+.food-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post{
+    padding: 5px 8px;
+    margin-top: 10px;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    background-color: white;
+    width: 120px;
+    text-align: center;
+
+}
+.post > h2{
+    font-size: 17px;
+    line-height: normal;
+}
+.post > p{
+    font-size: 9px;
+    line-height: normal;
+}
+
+.pages *{
+    display: inline;
+
+}
+.pages a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    width: 41px;
+    height: 38px;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    text-align: center;
+}
+.brackets{
+    font-size: 0.6em;
+}
+.pages a:hover{
+    color: white;
+    background-color: black;
+}
+.chef-info{
+    display: block;
+    text-align: center;
+}
+footer{
+    display: flex;
+    margin:0 20px;
+}
+.footer-info{
+    width: 33.5%;
+}
+.blog-posts{
+    width: 33%;
+}
+.tags{
+    width: 33.5%;
+}
+.footer-post{
+    display: inline-block;
+}
